@@ -31,7 +31,7 @@ const Header=()=>{
         </Link>
       </li>
       <li className="text-[14px] px-4 py-1 border-l-2 border-black hover:underline">
-        <Link href="/">
+        <Link href="/cart">
         Help </Link>
       </li>
       <li className="text-[14px] px-4 py-1 border-l-2 border-black hover:underline">

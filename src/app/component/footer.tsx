@@ -56,8 +56,8 @@ const Footer = () => {
                 {/* Country and Copyright */}
                 <div className="flex mb-4 md:mb-0 gap-2">
                     <CiLocationOn className='' />
-                    <p>India</p>
-                    <p>© 2023 Nike, Inc. All Rights Reserved</p>
+                    <p>Pakistan</p>
+                    <p>© 2024 Nike, Inc. Madiha Rashid</p>
                 </div>
 
                 {/* Links */}
