@@ -1,68 +1,88 @@
+import { client } from "@/sanity/lib/client";
 import Image from "next/image"
+
+// interface IProducts {
+//     id: string;
+//     productName: string;
+//     image: any;
+//     price: number;
+//     category: string;
+// }
+// const getProductData = async () => {
+//     const query =* [_type == 'products']
+//     const response = await client fetch(query);
+//     return response;
+// };
+
+
+
+
+
 const Bestproduct = () => {
+
     return (
 
         <div className="w-full bg-white py-6 flex justify-center items-center">
-        <div className="w-full max-w-[1440px] bg-white px-4">
-            {/* <!-- Header Section --> */}
-            <div className="flex justify-between items-center mb-6">
-                <h1 className="text-sm font-bold ml-3">Best of Air Max</h1>
-                <h1 className="text-sm font-bold mr-5 cursor-pointer">Shop</h1>
-            </div>
-    
-            {/* <!-- Product Grid --> */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {/* <!-- Product 1 --> */}
-                <div className="w-full max-w-[441.36px] mx-auto bg-white p-4">
-                    <Image
-                        src="/Image (7).png"
-                        alt="Nike Air Max Pulse - Women's Shoes"
-                        width={441.36}
-                        height={441.36}
-                        className="w-full object-cover"
-                    />
-                    <div className="mt-4 ">
-                        <h1 className="text-sm font-bold">Nike Air Max Pulse</h1>
-                        <p className="text-xs text-gray-600 text-right">₹ 3 895</p>
-                        <p className="text-xs text-gray-500 mt-2">Womens Shoes</p>
-                    </div>
+            <div className="w-full max-w-[1440px] bg-white px-4">
+                {/* <!-- Header Section --> */}
+                <div className="flex justify-between items-center mb-6">
+                    <h1 className="text-sm font-bold ml-3">Best of Air Max</h1>
+                    <h1 className="text-sm font-bold mr-5 cursor-pointer">Shop</h1>
                 </div>
-    
-                {/* <!-- Product 2 --> */}
-                <div className="w-full max-w-[441.36px] mx-auto bg-white p-4">
-                    <Image
-                        src="/Image (8).png"
-                        alt="Nike Air Max Pulse - Men's Shoes"
-                        width={441.36}
-                        height={441.36}
-                        className="w-full object-cover"
-                    />
-                    <div className="mt-4 ">
-                        <h1 className="text-sm font-bold">Nike Air Max Pulse</h1>
-                        <p className="text-xs text-gray-600 text-right">₹ 3 895</p>
-                        <p className="text-xs text-gray-500 mt-2">Mens Shoes</p>
+
+                {/* <!-- Product Grid --> */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {/* <!-- Product 1 --> */}
+                    <div className="w-full max-w-[441.36px] mx-auto bg-white p-4">
+                        <Image
+                            src="/Image (7).png"
+                            alt="Nike Air Max Pulse - Women's Shoes"
+                            width={441.36}
+                            height={441.36}
+                            className="w-full object-cover"
+                        />
+                        <div className="mt-4 ">
+                            <h1 className="text-sm font-bold">Nike Air Max Pulse</h1>
+                            <p className="text-xs text-gray-600 text-right">₹ 3 895</p>
+                            <p className="text-xs text-gray-500 mt-2">Womens Shoes</p>
+                        </div>
                     </div>
-                </div>
-    
-                {/* <!-- Product 3 --> */}
-                <div className="w-full max-w-[441.36px] mx-auto bg-white p-4">
-                    <Image
-                        src="/Image (9).png"
-                        alt="Nike Air Max 97 SE - Men's Shoes"
-                        width={441.36}
-                        height={441.36}
-                        className="w-full object-cover"
-                    />
-                    <div className="mt-4 ">
-                        <h1 className="text-sm font-bold">Nike Air Max 97 SE</h1>
-                        <p className="text-xs text-gray-600 text-right">₹ 3 895</p>
-                        <p className="text-xs text-gray-500 mt-2">Mens Shoes</p>
+
+                    {/* <!-- Product 2 --> */}
+                    <div className="w-full max-w-[441.36px] mx-auto bg-white p-4">
+                        <Image
+                            src="/Image (8).png"
+                            alt="Nike Air Max Pulse - Men's Shoes"
+                            width={441.36}
+                            height={441.36}
+                            className="w-full object-cover"
+                        />
+                        <div className="mt-4 ">
+                            <h1 className="text-sm font-bold">Nike Air Max Pulse</h1>
+                            <p className="text-xs text-gray-600 text-right">₹ 3 895</p>
+                            <p className="text-xs text-gray-500 mt-2">Mens Shoes</p>
+                        </div>
+                    </div>
+
+                    {/* <!-- Product 3 --> */}
+                    <div className="w-full max-w-[441.36px] mx-auto bg-white p-4">
+                        <Image
+                            src="/Image (9).png"
+                            alt="Nike Air Max 97 SE - Men's Shoes"
+                            width={441.36}
+                            height={441.36}
+                            className="w-full object-cover"
+                        />
+                        <div className="mt-4 ">
+                            <h1 className="text-sm font-bold">Nike Air Max 97 SE</h1>
+                            <p className="text-xs text-gray-600 text-right">₹ 3 895</p>
+                            <p className="text-xs text-gray-500 mt-2">Mens Shoes</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    
+
 
 
 
