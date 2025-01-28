@@ -1,7 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
 
+
 const Header=()=>{
+  
     return(
         <>
    
@@ -26,12 +28,12 @@ const Header=()=>{
     {/* Navigation Buttons */}
     <ul className="w-auto h-[36px] flex items-center gap-4">
       <li className="text-[14px] px-4 py-1 hover:underline">
-        <Link href="/product">
+        <Link href="/shoes">
         Find a Store
         </Link>
       </li>
       <li className="text-[14px] px-4 py-1 border-l-2 border-black hover:underline">
-        <Link href="/cart">
+        <Link href="/checkoutpage">
         Help </Link>
       </li>
       <li className="text-[14px] px-4 py-1 border-l-2 border-black hover:underline">

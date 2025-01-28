@@ -1,45 +1,18 @@
-export const allProduct = `
-*[_type == "product"] {
+import { groq } from "next-sanity";
+
+
+// Query for all products
+export const allProduct = groq`*[_type == "product"]{
   _id,
-  name,
+  productName,
+  slug {
+    current
+  },
   description,
   price,
-  "imageUrl": image.asset->url
-}
-`;
+  image
+}`;
 
 
-
-
-
-
-
-
-
-// import { defineQuery } from "next-sanity";
-
-// export const allProduct = defineQuery(`
-//     *[_type == "product"]{
-//     _id, 
-// producName,
-// description,
-// price,
-// category,
-// inventory,
-// productUrl,
-// "image":image.asset->url,
-// "product":slug.current,
-
-//     }
-//     `)
-
-// export const forPro = defineQuery(`
-//         *[_type == "product"][0..3]{
-//         _id, 
-//     producName,
-//     category,
-//     price,
-//     "Imageurl":image.asset=>url
-    
-//         }
-//         `)
+// Query for featured products (first 4 products)
+export const forPro = groq` *[_type == "product"][0..2]`;

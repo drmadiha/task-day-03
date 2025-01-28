@@ -1,3 +1,4 @@
+import { sources } from "next/dist/compiled/webpack/webpack";
 
 export const productSchema = {
     name: 'product',
@@ -8,6 +9,15 @@ export const productSchema = {
         name: 'productName',
         title: 'Product Name',
         type: 'string',
+      },
+      {
+        name:"slug",
+        type:"slug",
+        title:"slug",
+        Options:{
+          sources:"productName",
+          maxLength: 96,
+        }
       },
       {
         name: 'category',

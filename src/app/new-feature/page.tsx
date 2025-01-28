@@ -1,3 +1,92 @@
+// import { sanityfetch } from "@/sanity/lib/fetch";
+// import { allProduct } from "@/sanity/lib/queries";
+// import Image from "next/image";
+// import Link from "next/link";
+// import Header from "../component/header";
+// import Header2 from "../component/header2";
+// import Header3 from "../component/header3";
+
+// type Product = {
+//   _id: string;
+//   name: string;
+//   description: string;
+//   price: number;
+//   imageUrl: string;
+// };
+
+// export default async function Page() {
+//   let products: Product[] = [];
+
+//   try {
+//     // Fetch products from Sanity
+//     products = await sanityfetch({ query: allProduct });
+//   } catch (error) {
+//     console.error("Error fetching products:", error);
+//   }
+
+//   return (
+//     <>
+//       <Header />
+//       <Header2 />
+//       <Header3 />
+//       <div className="container mx-auto px-4 py-8">
+//         <h1 className="text-2xl font-bold mb-6 text-center">Products</h1>
+//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+//           {products.length > 0 ? (
+//             products.map((product) => (
+//               <Link href={`/product/${product._id}`} key={product._id}>
+//                 <div className="border p-4 rounded shadow-sm flex flex-col items-center cursor-pointer">
+//                   <Image
+//                     src={product.imageUrl}
+//                     alt={product.name}
+//                     className="rounded w-full object-cover"
+//                     width={300}
+//                     height={300}
+//                   />
+//                   <h2 className="text-lg font-bold text-center mt-4">
+//                     {product.name}
+//                   </h2>
+//                   <p className="text-center text-gray-600 mt-2">
+//                     {product.description}
+//                   </p>
+//                   <p className="text-center text-lg font-semibold text-blue-500 mt-4">
+//                     ₹ {product.price}
+//                   </p>
+//                 </div>
+//               </Link>
+//             ))
+//           ) : (
+//             <p className="col-span-full text-center text-gray-500">
+//               No products found.
+//             </p>
+//           )}
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import Image from "next/image"
 import React from "react"
 import Header from "../component/header";
@@ -50,14 +139,16 @@ export default function NewFeature() {
         </div>
     </div>
 </div>
-
+</>
+    );
+} 
 
 
 
 
 
             
-            {/* <div className="w-full min-h-screen bg-white flex justify-center items-center p-4">
+            {/* {/* <div className="w-full min-h-screen bg-white flex justify-center items-center p-4">
                 <div className="W-[1200PX] H-[1125PX] bg-white flex justify-between">
                     <div className="w-[653px] h-[653px] bg-white justify-center mt-[10%] ">
                         <Image
@@ -80,6 +171,6 @@ export default function NewFeature() {
                     </div>
                 </div>
             </div> */}
-        </>
-    );
-}
+        // </>
+    //);
+//}  

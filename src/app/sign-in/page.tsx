@@ -3,7 +3,7 @@ import Header from "../component/header";
 import Header2 from "../component/header2";
 import Header3 from "../component/header3";
 import { SiNike } from "react-icons/si";
-export default function Joinus(){
+export default function Singin(){
   return (
     <>
     <Header />

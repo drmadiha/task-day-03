@@ -5,7 +5,7 @@ import Header3 from "../component/header3";
 
 // pages/contact.js
 
-export default function Signin() {
+export default function Joinus() {
   return (
 
     <div>

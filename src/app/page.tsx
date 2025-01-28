@@ -10,7 +10,9 @@ import Flight from "./component/flight";
 import Esentials from "./component/esentials";
 import Silp from "./component/silp";
 import Gear from "./component/gear";
-import Page from "./component/practis";
+
+import Practis from "./component/practis";
+
 
 // import HelpPage from"./component/contact";
 export default function Home() {
@@ -20,12 +22,13 @@ export default function Home() {
       <Header2 />
       <Header3 />
       <Herosection />
-      <Page />
+      <Practis />
       <Baneer />
       <Gear />
       <Flight />
       <Esentials />
       <Silp />
+      
       {/* <HelpPage /> */}
 
 
